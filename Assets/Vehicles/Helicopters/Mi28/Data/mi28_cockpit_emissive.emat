@@ -1,0 +1,10 @@
+MatPBRBasic {
+ Emissive 1 1 1 0
+ EmissiveLV 1
+ ApplyAlbedoToEmissive 1
+ AlphaMul 3
+ BlendMode AlphaBlend
+ EmissiveMap "{DFACDDCD38260E96}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_cockpit_emissive_base_BCR.edds"
+ BCRMap "{DFACDDCD38260E96}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_cockpit_emissive_base_BCR.edds"
+ OpacityMap "{0CB85D8CB70EB02F}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_cockpit_emissive_alpha.edds"
+}

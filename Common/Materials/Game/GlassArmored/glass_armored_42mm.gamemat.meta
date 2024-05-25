@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{CB151E290DA00CBA}Common/Materials/Game/GlassArmored/glass_armored_42mm.gamemat"
+ Configurations {
+  GameMaterialResourceClass PC {
+  }
+  GameMaterialResourceClass XBOX_ONE : PC {
+  }
+  GameMaterialResourceClass XBOX_SERIES : PC {
+  }
+  GameMaterialResourceClass PS4 : PC {
+  }
+  GameMaterialResourceClass HEADLESS : PC {
+  }
+ }
+}

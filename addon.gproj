@@ -1,0 +1,83 @@
+GameProject {
+ ID "Mi28"
+ GUID "609E138FE9005877"
+ TITLE "Mi-28"
+ Dependencies {
+  "5E389BB9F58B79A6" "58D0FB3206B6F859" "5F1EE615E7AE3106"
+ }
+ Configurations {
+  GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E02}" {
+    StringTables {
+     StringTableDefinition "{60FF7518D64C978C}" {
+      StringTableSource "{027E998B4A761D0C}Language/MI28_Localization.st"
+      Languages {
+       LanguageDefinition "{60FF7518D5DB9D4C}" {
+        Code "cs_cz"
+        StringTableRuntime "{5EC984674530DFA2}Language/MI28_Localization.cs_cz.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9D8A}" {
+        Code "de_de"
+        StringTableRuntime "{8BB79E545693CE82}Language/MI28_Localization.de_de.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9DA4}" {
+        Code "en_us"
+        StringTableRuntime "{D547141F3C60CB83}Language/MI28_Localization.en_us.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9DB5}" {
+        Code "es_es"
+        StringTableRuntime "{100B5996D262A09C}Language/MI28_Localization.es_es.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9DCF}" {
+        Code "fr_fr"
+        StringTableRuntime "{ABA3ACA134E1439E}Language/MI28_Localization.fr_fr.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9DD8}" {
+        Code "it_it"
+        StringTableRuntime "{2BBF239599C3C067}Language/MI28_Localization.it_it.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9DEE}" {
+        Code "ja_jp"
+        StringTableRuntime "{3BA49E07A7B2F0CC}Language/MI28_Localization.ja_jp.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9DFE}" {
+        Code "ko_kr"
+        StringTableRuntime "{9B1AB6AB349FF3F3}Language/MI28_Localization.ko_kr.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9E15}" {
+        Code "pl_pl"
+        StringTableRuntime "{C76B10518A706F8F}Language/MI28_Localization.pl_pl.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9E1A}" {
+        Code "pt_br"
+        StringTableRuntime "{121C8A9DB18EA535}Language/MI28_Localization.pt_br.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9E36}" {
+        Code "ru_ru"
+        StringTableRuntime "{475D9E352CF7C043}Language/MI28_Localization.ru_ru.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9F5D}" {
+        Code "uk_ua"
+        StringTableRuntime "{CD05CBC340D97E16}Language/MI28_Localization.uk_ua.conf"
+       }
+       LanguageDefinition "{60FF7518D5DB9F62}" {
+        Code "zh_cn"
+        StringTableRuntime "{17B5A5FE7979AE0B}Language/MI28_Localization.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

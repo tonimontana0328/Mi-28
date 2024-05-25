@@ -1,0 +1,5 @@
+MatPBRBasic {
+ RoughnessScale 1.5
+ BCRMap "{5911F68A358A1C42}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_body_base_BCR.edds"
+ NMOMap "{61C94D18ECFD4EDC}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_body_base_NMO.edds"
+}

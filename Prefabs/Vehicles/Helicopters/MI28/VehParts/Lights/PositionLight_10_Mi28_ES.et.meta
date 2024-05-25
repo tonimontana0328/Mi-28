@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{CE7F4FCF6BFDD71C}Prefabs/Vehicles/Helicopters/MI28/VehParts/Lights/PositionLight_10_Mi28_ES.et"
+ Configurations {
+  EntityTemplateResourceClass PC {
+  }
+  EntityTemplateResourceClass XBOX_ONE : PC {
+  }
+  EntityTemplateResourceClass XBOX_SERIES : PC {
+  }
+  EntityTemplateResourceClass PS4 : PC {
+  }
+  EntityTemplateResourceClass PS5 : PC {
+  }
+  EntityTemplateResourceClass HEADLESS : PC {
+  }
+ }
+}

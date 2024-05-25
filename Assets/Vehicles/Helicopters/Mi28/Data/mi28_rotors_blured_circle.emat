@@ -1,0 +1,15 @@
+MatPBRBasic {
+ Color 0.021 0.021 0.021 1
+ ZWrite 0
+ Cull none
+ Sort translucent
+ CastShadow 0
+ OccludeWetness 0
+ AlphaMul 0.9
+ BlendMode AlphaBlend
+ RoughnessScale 0.903
+ MetalnessScale 0
+ CavityFromAO 0
+ OpacityMap "{47C82E58F62E698F}Assets/Vehicles/Helicopters/Mi8/Data/Mi8_rotorblur_circle_A.edds"
+ ManualCascadesShadows 1
+}

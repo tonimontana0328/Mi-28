@@ -1,0 +1,8 @@
+GenericEntity : "{F9504FA566F3F2F3}Prefabs/Vehicles/Helicopters/MI28/Dst/Mi28_window_base.et" {
+ ID "54ACA4E7EDB33945"
+ components {
+  MeshObject "{54ACA4E7F43678F8}" {
+   Object "{9FE0800DAC0DCA55}Assets/Vehicles/Helicopters/Mi28/mi-28n_glass.xob"
+  }
+ }
+}

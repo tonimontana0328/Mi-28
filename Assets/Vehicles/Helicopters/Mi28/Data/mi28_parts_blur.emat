@@ -1,0 +1,14 @@
+MatPBRBasic {
+ ZWrite 0
+ Cull none
+ Sort near
+ SortBias 1
+ OccludeWetness 0
+ AlphaMul 0.1
+ BlendMode AlphaBlend
+ RoughnessScale 1.5
+ CavityFromAO 0
+ BCRMap "{E4EEFF89CFBC5D5B}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_parts_base_BCR.edds"
+ NMOMap "{DC36441B16CB0FC5}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_parts_base_NMO.edds"
+ ManualCascadesShadows 1
+}

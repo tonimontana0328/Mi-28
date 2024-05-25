@@ -1,0 +1,17 @@
+MetaFileClass {
+ Name "{EABE0801702C005F}Assets/Vehicles/Helicopters/Mi28/Data/mi28_rotors_blured.emat"
+ Configurations {
+  EMATResourceClass PC {
+  }
+  EMATResourceClass XBOX_ONE : PC {
+  }
+  EMATResourceClass XBOX_SERIES : PC {
+  }
+  EMATResourceClass PS4 : PC {
+  }
+  EMATResourceClass PS5 : PC {
+  }
+  EMATResourceClass HEADLESS : PC {
+  }
+ }
+}

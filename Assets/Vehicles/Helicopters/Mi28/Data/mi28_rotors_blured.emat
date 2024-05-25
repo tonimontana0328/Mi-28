@@ -1,0 +1,15 @@
+MatPBRBasic {
+ Color 0.068 0.068 0.068 1
+ ZWrite 0
+ Cull none
+ Sort near
+ SortBias 1
+ OccludeWetness 0
+ SpecularMul 0
+ BlendMode AlphaBlend
+ MetalnessScale 0
+ DielectricReflectance 0.16
+ BCRMap "{CECEF09CD10EDC19}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_rotors_blured.edds"
+ OpacityMap "{00B6366A3D981361}Assets/Vehicles/Helicopters/Mi28/Data/Textures/mi-28_rotors_blured_A.edds"
+ ManualCascadesShadows 1
+}
