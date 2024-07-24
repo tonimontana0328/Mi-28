@@ -458,7 +458,7 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    MultiSlots {
     MultiSlotConfiguration "{60BA9678C72584BD}" {
      SlotTemplate InventoryStorageSlot MainGunAmmo {
-      Prefab "{1B36733057BCEA62}Prefabs/Weapons/Magazines/Box_30mm_2A42_250rnd_Base.et"
+      Prefab "{33B2DFDCD0EBA3DB}Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et"
      }
      NumSlots 2
     }
@@ -1173,5 +1173,5 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    AutoVariablesBind 1
   }
  }
- coords 108.782 0 1231.911
+ coords 1292.246 37.844 2846.009
 }

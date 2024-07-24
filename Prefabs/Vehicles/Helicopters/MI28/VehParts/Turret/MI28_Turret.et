@@ -219,7 +219,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     Offset -0.0355 -0.0195 0.1739
     MergePhysics 1
    }
-   WeaponTemplate "{292E1D387F454BE1}Prefabs/Weapons/HeavyWeapons/HMG_2A42.et"
+   WeaponTemplate "{292E1D387F454BE1}Prefabs/Weapons/HeavyWeapons/HMG_2A42_HE.et"
   }
   WeaponSlotComponent "{60BA967AA9D2ED88}" {
    SignalsSourceAccess SignalsSourceAccessClass "{60BA967AA9D29210}" {
@@ -228,11 +228,13 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    useAimingType MainTurret
    shouldHandleObstruction 0
    AttachType InventoryStorageSlot Missile {
-    PivotID "pylon_01"
-    Angles 0 180 0
+    PivotID "v_gun_01"
+    Offset -0.0355 -0.0195 0.1739
+    Angles 0 0 0
     MergePhysics 1
    }
-   WeaponTemplate "{FFEC7CBBDA59E0C3}Prefabs/Weapons/RocketPods/VehicleLauncher_9M120.et"
+   WeaponTemplate "{41B569D2E017D4DB}Prefabs/Weapons/HeavyWeapons/HMG_2A42_AP.et"
+   WeaponSlotIndex 1
   }
   WeaponSlotComponent "{60BA967AA9D2ED8B}" {
    SignalsSourceAccess SignalsSourceAccessClass "{60BA967AA9D2ED8A}" {
@@ -246,7 +248,7 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     MergePhysics 1
    }
    WeaponTemplate "{FFEC7CBBDA59E0C3}Prefabs/Weapons/RocketPods/VehicleLauncher_9M120.et"
-   WeaponSlotIndex 1
+   WeaponSlotIndex 2
   }
   SCR_TurretInventoryStorageManagerComponent "{60BA967AA9D2920D}" {
    Enabled 0
@@ -290,6 +292,22 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    }
    AutoVariablesBind 1
   }
+  WeaponSlotComponent "{61F0EB15AC94CD75}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{61F0EB15A63C6D34}" {
+    signalsSuffix "Turret"
+   }
+   useAimingType MainTurret
+   shouldHandleObstruction 0
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0
+   AttachType InventoryStorageSlot "{61F0EB15A24B2D53}" {
+    PivotID "pylon_04"
+    Angles 0 180 0
+    MergePhysics 1
+   }
+   WeaponTemplate "{FFEC7CBBDA59E0C3}Prefabs/Weapons/RocketPods/VehicleLauncher_9M120.et"
+   WeaponSlotIndex 3
+  }
  }
- coords 116.751 0 1240.661
+ coords 1275.099 37.783 2845.868
 }
