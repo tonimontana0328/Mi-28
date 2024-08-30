@@ -1,0 +1,15 @@
+GenericEntity : "{292E1D387F454BE1}Prefabs/Weapons/HeavyWeapons/HMG_2A42_HE.et" {
+ ID "CFBAA4B725411E45"
+ components {
+  WeaponComponent "{CFBAA4B706BA66E8}" {
+   components {
+    MuzzleComponent "{50F64C4591CD7AA6}" {
+     MagazineWell MagazineWell2A4AP2MI28 "{61F0EB149B7C26AC}" {
+     }
+     MagazineTemplate "{031367E28569A811}Prefabs/Weapons/Magazines/Box_30mm_2A42_250rnd_AP.et"
+    }
+   }
+  }
+ }
+ coords 1277.877 37.94 2835.837
+}
