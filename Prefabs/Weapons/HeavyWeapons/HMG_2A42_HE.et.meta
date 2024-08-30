@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{F84B8A18FCA1CDD0}Prefabs/Vehicles/Helicopters/MI28/VehParts/Turret/MI28_Turret.et"
+ Name "{292E1D387F454BE1}Prefabs/Weapons/HeavyWeapons/HMG_2A42.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
