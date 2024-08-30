@@ -9,7 +9,7 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
   InventoryMagazineComponent "{51EED12B803954CC}" {
    Attributes SCR_ItemAttributeCollection "{51EED12B86960275}" {
     ItemDisplayName UIInfo "{51FEE38527BFEA5B}" {
-     Name "20x102mm 250rnd M197 HEI-T Belt"
+     Name "30x165 mm 230rnd 2A42 mixed Belt"
      Description ""
     }
     ItemPhysAttributes ItemPhysicalAttributes "{61197E8833ACBF1B}" {
@@ -29,15 +29,15 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
    WeightPerAmmo 0.22
   }
   MagazineComponent "{CA6BE4D6B4DAFD69}" {
-   MagazineWell MagazineWell2A42 "{61197E8833ACBF2A}" {
+   MagazineWell MagazineWell2A42HEMI28 "{61F0EB13F515482B}" {
    }
    UIInfo MagazineUIInfo "{57126733AA401586}" {
-    Name "20x102mm 250rnd M197 HEI-T Belt"
+    Name "30x165 mm 230rnd 2A42 mixed Belt"
     Icon ""
-    m_sAmmoCaliber "20x102mm"
+    m_sAmmoCaliber "30x165mm"
     m_eAmmoTypeFlags 138
    }
-   MaxAmmo 250
+   MaxAmmo 230
    AmmoConfig "{E720ED4ECF4C4234}Configs/Weapons/Ammo/Ammo_30x165.conf"
    AmmoMapping {
     0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0 0 1 0 0
@@ -60,5 +60,5 @@ GenericEntity : "{F9E1A46E3ABA116F}Prefabs/Weapons/Core/Magazine_Base.et" {
    }
   }
  }
- coords 3.087 1.634 4.036
+ coords 1267.878 37.711 2848.473
 }

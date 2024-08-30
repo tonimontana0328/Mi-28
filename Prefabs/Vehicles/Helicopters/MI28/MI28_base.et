@@ -223,6 +223,21 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    Mass 9000
   }
   SCR_BaseCompartmentManagerComponent "{20FB66C5DCB8DF72}" {
+   DoorInfoList {
+    CompartmentDoorInfo "{61C8C22248C86EC2}" {
+     ContextName "door_02"
+     EntryPositionInfo PointInfo "{61C8C2227FB8AF5A}" {
+     }
+     ExitPositionInfo PointInfo "{61C8C2227E894EEE}" {
+      PivotID "pilot_idle"
+     }
+     GetInTeleport 1
+     GetOutTeleport 1
+     FakeDoor 1
+     AccessibilitySettings CompartmentAccessibilityContext "{61C8C2226B835DB2}" {
+     }
+    }
+   }
    CompartmentSlots {
     PilotCompartmentSlot PilotCompartment {
      CompartmentAction SCR_GetInUserAction "{5086DB209BDE8253}" {
@@ -230,12 +245,9 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
        "door_02"
       }
      }
-     GetOutAction SCR_GetOutAction "{60BA9678C724D7AA}" {
+     GetOutAction SCR_GetOutAction "{509D56667AFC4BD5}" {
       ParentContextList {
-       "door_r01_int"
-      }
-      UIInfo UIInfo "{60BA9678C724D7B4}" {
-       Name "#AR-UserAction_GetOut"
+       "door_02"
       }
      }
      SwitchSeatAction SCR_SwitchSeatAction "{509D56667885A8DC}" {
@@ -246,7 +258,12 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
      AdditionalActions {
       SCR_RemoveCasualtyUserAction "{5D528254D8CE5491}" {
        ParentContextList {
-        "door_02" "pilot"
+        "pilot"
+       }
+      }
+      SCR_RemoveCasualtyUserAction "{61089D5E93B44D65}" {
+       ParentContextList {
+        "door_02"
        }
       }
      }
@@ -255,23 +272,8 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
      }
      SeatType 1
      DoorInfoList {
-      CompartmentDoorInfo "{50B8D5DDA17EB35D}" {
-       ContextName "door_02"
-       EntryPositionInfo PointInfo "{50B8D5DD213DC00C}" {
-        PivotID "stepIn_pilot"
-        Offset 2.3801 0 1.6483
-        Angles 0 -90 0
-       }
-       ExitPositionInfo PointInfo "{60BA9678C724D7BF}" {
-        PivotID "pilot_idle"
-       }
-      }
+      0
      }
-     AccessibilitySettings CompartmentAccessibilityContext "{60BA9678C724D7C5}" {
-      TraceOffset 0 0.2 0.5
-      TraceLength -0.5
-     }
-     BaseCoverage 0.3
     }
    }
   }
@@ -349,7 +351,7 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
      21 1001
     }
     m_aAutoLabels {
-     11 122
+     10 122
     }
    }
   }
@@ -456,7 +458,7 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    MultiSlots {
     MultiSlotConfiguration "{60BA9678C72584BD}" {
      SlotTemplate InventoryStorageSlot MainGunAmmo {
-      Prefab "{1B36733057BCEA62}Prefabs/Weapons/Magazines/Box_30mm_2A42_250rnd_Base.et"
+      Prefab "{33B2DFDCD0EBA3DB}Prefabs/Items/Equipment/Kits/RepairKit_01/RepairKit_01_wrench.et"
      }
      NumSlots 2
     }
@@ -892,6 +894,36 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    WeaponTemplate "{CF753E764D269489}Prefabs/Weapons/RocketPods/VehicleLauncher_B8V20A.et"
    WeaponSlotIndex 2
   }
+  WeaponSlotComponent "{61F29BCF9D596BB5}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{61F29BCF8CA0029E}" {
+    signalsSuffix "Helicopter"
+   }
+   shouldHandleObstruction 0
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0
+   AttachType InventoryStorageSlot "{61F29BCF8B95CDB0}" {
+    PivotID "pylon_01"
+    Angles 0 180 0
+    MergePhysics 1
+   }
+   WeaponTemplate "{CF753E764D269489}Prefabs/Weapons/RocketPods/VehicleLauncher_B8V20A.et"
+   WeaponSlotIndex 3
+  }
+  WeaponSlotComponent "{61F29BCFE1F649E6}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{61F29BCF8EEBE5B4}" {
+    signalsSuffix "Helicopter"
+   }
+   shouldHandleObstruction 0
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0
+   AttachType InventoryStorageSlot "{61F29BCF85E04C2C}" {
+    PivotID "pylon_04"
+    Angles 0 180 0
+    MergePhysics 1
+   }
+   WeaponTemplate "{CF753E764D269489}Prefabs/Weapons/RocketPods/VehicleLauncher_B8V20A.et"
+   WeaponSlotIndex 4
+  }
   ActionsManagerComponent "{C97BE5489221AE18}" {
    ActionContexts {
     UserActionContext "{5E2EC4D3A76449F8}" {
@@ -1121,6 +1153,11 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
     }
    }
    additionalActions {
+    SCR_RefuelAtSupportStationAction "{5B02B547EDCF6F99}" : "{7891F1B10FA40962}Configs/Actions/SupportStationActions/Refuel/BaseRefuel.conf" {
+     ParentContextList {
+      "fuel_cap_l"
+     }
+    }
     SCR_RepairAtSupportStationAction "{5B02B547E8F16AF2}" : "{1B886EAAAB373515}Configs/Actions/SupportStationActions/Repair/DriveTrain/Heli_Repair_DriveTrain.conf" {
      ParentContextList {
       "engine_l" "engine_r"
@@ -1129,11 +1166,6 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
     SCR_RepairAtSupportStationAction "{5E20D2E3B055B082}" : "{8C07FF07DC9C77AF}Configs/Actions/SupportStationActions/Repair/Hull/Heli_Repair_Hull.conf" {
     }
     SCR_RepairAtSupportStationAction "{5E1CB6DF63753AD9}" : "{34FDBD1B59844DAD}Configs/Actions/SupportStationActions/Repair/FuelTank/Repair_FuelTank.conf" {
-     ParentContextList {
-      "fuel_cap_l"
-     }
-    }
-    SCR_RefuelAtSupportStationAction "{5B02B547EDCF6F99}" : "{7891F1B10FA40962}Configs/Actions/SupportStationActions/Refuel/BaseRefuel.conf" {
      ParentContextList {
       "fuel_cap_l"
      }
@@ -1171,5 +1203,5 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    AutoVariablesBind 1
   }
  }
- coords 1286.016 51 1359.295
+ coords 1299.699 37.88 2843.688
 }

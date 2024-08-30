@@ -55,16 +55,17 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
        ParticleEffect "{6C91B7E8EF31E8AE}Particles/Weapon/Smoke_KPVT.ptc"
        EffectPosition EntitySlotInfo "{513A938439231378}" {
         PivotID "barrel_muzzle"
-        Offset 0 0.0461 1.3037
-        Angles -90 0 0
+        Offset 0 -0.0796 2.5813
+        Angles 0 0 0
        }
        HasSound 0
       }
       SCR_MuzzleEffectComponent "{C9B3271BB22CDB68}" {
        ParticleEffect "{254588526C5E861A}Particles/Weapon/Muzzle_KPVT.ptc"
        EffectPosition EntitySlotInfo "{C9B3271BB85B5D32}" {
-        Offset 0 0.0461 1.3037
-        Angles -90 0 0
+        PivotID ""
+        Offset 0 -0.0796 2.5813
+        Angles 0 0 0
        }
       }
      }
@@ -81,8 +82,16 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      FireModes {
       BaseFireMode "{B80A64F4A8EF8333}" {
        MaxBurst -1
-       RoundsPerMinute 300
+       RoundsPerMinute 700
+       UIName "High"
       }
+      BaseFireMode "{61F0EB163751C9A7}" {
+       MaxBurst -1
+       RoundsPerMinute 200
+       UIName "Low"
+      }
+     }
+     MagazineWell MagazineWell2A42HEMI28 "{61F0EB149B7C26AC}" {
      }
      DispersionRange 200
      WeaponAimModifiers {
@@ -105,7 +114,7 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
      }
      UIInfo MuzzleUIInfo "{2FBBA72C906C627E}" {
       m_bShowCaliber 1
-      m_sCaliber "20x102mm"
+      m_sCaliber "30x165mm"
      }
      ReloadDuration 15
      AllowWeaponDeployment 0
@@ -113,11 +122,14 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
       PivotID ""
       Offset 0.0261 0.0259 -0.2269
      }
-     MagazineTemplate "{1B36733057BCEA62}Prefabs/Weapons/Magazines/Box_30mm_2A42_250rnd_Base.et"
+     MagazineTemplate "{B8D792B864E5D8D1}Prefabs/Weapons/Magazines/Box_30mm_2A42_230rnd_HE.et"
+    }
+    WeaponAnimationComponent "{60B4EA76EB15F6E0}" {
+     Enabled 0
     }
    }
    UIInfo WeaponUIInfo "{CC3BA6A2C42F09F4}" {
-    Name "M197"
+    Name "2A42"
     Description ""
     Icon ""
     m_bShowWeaponName 1
@@ -125,5 +137,5 @@ GenericEntity : "{F54F6C453A8CB478}Prefabs/Weapons/Core/MachineGun_Base.et" {
    WeaponSlotType "hmg"
   }
  }
- coords 2259.5 51.2 2160
+ coords 1253.975 38.339 2856.882
 }

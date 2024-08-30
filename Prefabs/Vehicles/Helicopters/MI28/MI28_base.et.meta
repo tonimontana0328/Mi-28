@@ -1,5 +1,5 @@
 MetaFileClass {
- Name "{FC30545B07C3478B}Prefabs/Vehicles/Helicopters/AH1/MI28_base.et"
+ Name "{FC30545B07C3478B}Prefabs/Vehicles/Helicopters/MI28/MI28_base.et"
  Configurations {
   EntityTemplateResourceClass PC {
   }
