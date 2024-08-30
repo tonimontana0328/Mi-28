@@ -351,7 +351,7 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
      21 1001
     }
     m_aAutoLabels {
-     10 122
+     11 122
     }
    }
   }
@@ -894,36 +894,6 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    WeaponTemplate "{CF753E764D269489}Prefabs/Weapons/RocketPods/VehicleLauncher_B8V20A.et"
    WeaponSlotIndex 2
   }
-  WeaponSlotComponent "{61F29BCF9D596BB5}" {
-   SignalsSourceAccess SignalsSourceAccessClass "{61F29BCF8CA0029E}" {
-    signalsSuffix "Helicopter"
-   }
-   shouldHandleObstruction 0
-   obstructionTestCharacterOffset 0 0 0
-   obstructionTestAddedLength 0
-   AttachType InventoryStorageSlot "{61F29BCF8B95CDB0}" {
-    PivotID "pylon_01"
-    Angles 0 180 0
-    MergePhysics 1
-   }
-   WeaponTemplate "{CF753E764D269489}Prefabs/Weapons/RocketPods/VehicleLauncher_B8V20A.et"
-   WeaponSlotIndex 3
-  }
-  WeaponSlotComponent "{61F29BCFE1F649E6}" {
-   SignalsSourceAccess SignalsSourceAccessClass "{61F29BCF8EEBE5B4}" {
-    signalsSuffix "Helicopter"
-   }
-   shouldHandleObstruction 0
-   obstructionTestCharacterOffset 0 0 0
-   obstructionTestAddedLength 0
-   AttachType InventoryStorageSlot "{61F29BCF85E04C2C}" {
-    PivotID "pylon_04"
-    Angles 0 180 0
-    MergePhysics 1
-   }
-   WeaponTemplate "{CF753E764D269489}Prefabs/Weapons/RocketPods/VehicleLauncher_B8V20A.et"
-   WeaponSlotIndex 4
-  }
   ActionsManagerComponent "{C97BE5489221AE18}" {
    ActionContexts {
     UserActionContext "{5E2EC4D3A76449F8}" {
@@ -1203,5 +1173,5 @@ Vehicle : "{CBD8C2393BE87581}Prefabs/Vehicles/Core/Helicopter_Base.et" {
    AutoVariablesBind 1
   }
  }
- coords 1299.699 37.88 2843.688
+ coords 1292.246 37.844 2846.009
 }

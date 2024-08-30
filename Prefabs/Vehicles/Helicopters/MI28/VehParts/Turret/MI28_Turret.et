@@ -236,6 +236,20 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
    WeaponTemplate "{41B569D2E017D4DB}Prefabs/Weapons/HeavyWeapons/HMG_2A42_AP.et"
    WeaponSlotIndex 1
   }
+  WeaponSlotComponent "{60BA967AA9D2ED8B}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{60BA967AA9D2ED8A}" {
+    signalsSuffix "Turret"
+   }
+   useAimingType MainTurret
+   shouldHandleObstruction 0
+   AttachType InventoryStorageSlot Missile {
+    PivotID "pylon_04"
+    Angles 0 180 0
+    MergePhysics 1
+   }
+   WeaponTemplate "{FFEC7CBBDA59E0C3}Prefabs/Weapons/RocketPods/VehicleLauncher_9M120.et"
+   WeaponSlotIndex 2
+  }
   SCR_TurretInventoryStorageManagerComponent "{60BA967AA9D2920D}" {
    Enabled 0
   }
@@ -277,6 +291,22 @@ Turret : "{4AD877DEA242E512}Prefabs/Weapons/Core/Turret_Base.et" {
     BindingName "Vehicle"
    }
    AutoVariablesBind 1
+  }
+  WeaponSlotComponent "{61F0EB15AC94CD75}" {
+   SignalsSourceAccess SignalsSourceAccessClass "{61F0EB15A63C6D34}" {
+    signalsSuffix "Turret"
+   }
+   useAimingType MainTurret
+   shouldHandleObstruction 0
+   obstructionTestCharacterOffset 0 0 0
+   obstructionTestAddedLength 0
+   AttachType InventoryStorageSlot "{61F0EB15A24B2D53}" {
+    PivotID "pylon_04"
+    Angles 0 180 0
+    MergePhysics 1
+   }
+   WeaponTemplate "{FFEC7CBBDA59E0C3}Prefabs/Weapons/RocketPods/VehicleLauncher_9M120.et"
+   WeaponSlotIndex 3
   }
  }
  coords 1275.099 37.783 2845.868
